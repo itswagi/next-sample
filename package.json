@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
+    "startz": "next start -H 0.0.0.0 -p ${PORT:-8080}",
+    "start": "next start",
+    "export: "yarn build && next export -o _static",
     "lint": "next lint"
   },
   "dependencies": {
